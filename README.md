@@ -401,7 +401,7 @@ wx-helper/
 ├─ tests/                   不连接微信的单元测试
 ├─ tools/                   初始化配置、打包、发布前隐私检查
 ├─ docs/screenshots/        已脱敏的界面截图
-├─ .github/                 CI、Issue 与 PR 模板
+├─ .github/                 Issue 与 PR 模板
 ├─ bot_config.example.json  公开配置模板
 ├─ llm_config.example.json  公开大模型模板（API Key 为空）
 ├─ members_config.example.json
