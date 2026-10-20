@@ -1,0 +1,1 @@
+{"api":"v1","description":"好友私聊 AI 对话：私聊文本走大模型回复，附带最近上下文","requires":["text.receive","text.send"]}

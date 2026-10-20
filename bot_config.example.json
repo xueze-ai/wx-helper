@@ -1,0 +1,62 @@
+{
+  "backend": "native_text",
+  "chat_allowlist": [],
+  "wechat_pid": null,
+  "wechat_account": "wxid_example_robot",
+  "reconnect_seconds": 5,
+  "plugin_queue_size": 128,
+  "console": true,
+  "log_level": "INFO",
+  "llm_config_file": "llm_config.json",
+  "members_config_file": "members_config.json",
+  "text_send_delay": {
+    "enabled": true,
+    "characters_per_group": 10,
+    "min_seconds": 0.1,
+    "max_seconds": 0.3
+  },
+  "send_guard": {
+    "enabled": true,
+    "min_interval_seconds": 0.8,
+    "per_chat_seconds": 3.0,
+    "max_per_minute": 20,
+    "duplicate_window_seconds": 20.0,
+    "jitter_ratio": 0.25
+  },
+  "plugins": {
+    "personality": {
+      "enabled": true
+    },
+    "mention_chat": {
+      "enabled": false
+    },
+    "chat_summary": {
+      "enabled": false
+    },
+    "dm_chat": {
+      "enabled": false,
+      "allow_from": [],
+      "history_size": 10
+    },
+    "chat_records": {
+      "enabled": true
+    },
+    "member_identity": {
+      "enabled": true
+    },
+    "idiom_chain": {
+      "enabled": false,
+      "member_names": {}
+    },
+    "group_fun": {
+      "enabled": true
+    },
+    "id_responder": {
+      "enabled": true
+    },
+    "echo": {
+      "enabled": true,
+      "prefix": "echo "
+    }
+  }
+}

@@ -1,0 +1,5 @@
+{
+  "api": "v1",
+  "description": "真实艾特机器人后，按群人格回复并携带发言者前十条上下文",
+  "requires": ["group.text.receive", "group.text.send", "group.text.mention"]
+}

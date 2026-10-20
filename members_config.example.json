@@ -1,0 +1,7 @@
+{
+  "database_file": ".runtime/member_data.sqlite3",
+  "history_enabled": true,
+  "daily_clear": true,
+  "groups": {},
+  "group_labels": {}
+}

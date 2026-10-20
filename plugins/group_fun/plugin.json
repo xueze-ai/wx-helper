@@ -1,0 +1,1 @@
+{"api":"v1","description":"群玩法：菜单、签到、积分、排行、抽奖","requires":["group.text.receive","group.text.send","group.text.mention"]}

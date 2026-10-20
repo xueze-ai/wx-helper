@@ -1,0 +1,90 @@
+name: Bug 报告
+description: 报告可复现的功能、界面或桥接问题
+title: "[Bug] "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        感谢反馈。**请先删除 API Key、wxid、群 ID、群名、昵称、聊天正文和本地路径。**
+        如果是安全漏洞，请不要在这里公开细节，改用 SECURITY.md 中的私密报告渠道。
+
+  - type: input
+    id: version
+    attributes:
+      label: wx-helper 版本
+      description: 在“关于”页可以看到，例如 1.2.0
+      placeholder: "1.2.0"
+    validations:
+      required: true
+
+  - type: input
+    id: environment
+    attributes:
+      label: Windows 与微信版本
+      description: 例如 Windows 11 23H2 x64 / 微信 4.1.15.13
+      placeholder: "Windows 11 x64 / 微信 4.1.15.13"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: mode
+    attributes:
+      label: 运行方式
+      options:
+        - 打包 EXE
+        - 源码运行（python gui.py）
+        - 源码运行（python main.py）
+        - 其他
+    validations:
+      required: true
+
+  - type: input
+    id: plugin
+    attributes:
+      label: 相关插件或页面
+      description: 例如 group_fun、mention_chat、统计页、自动更新
+      placeholder: "mention_chat"
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: 复现步骤
+      description: 请写出最小、可重复的步骤
+      placeholder: |
+        1. 打开……
+        2. 在群内发送……
+        3. 出现……
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: 预期结果
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: 实际结果
+    validations:
+      required: true
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: 已脱敏的日志或截图
+      description: 删除 wxid、群 ID、昵称、聊天正文、API Key 和本地路径后再粘贴
+      render: text
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: 提交前确认
+      options:
+        - label: 我已使用最新版本，并搜索过现有 Issue
+          required: true
+        - label: 我已移除所有密钥、账号、群 ID、聊天内容和本地路径
+          required: true

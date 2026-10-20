@@ -1,0 +1,89 @@
+# ---------------------------------------------------------------------------
+# 本地账号、群聊、模型密钥与私有标记
+# 这些文件只属于当前使用者，绝不能提交到公开仓库。
+# ---------------------------------------------------------------------------
+/bot_config*.json
+!/bot_config.example.json
+/members_config*.json
+!/members_config.example.json
+/llm_config*.json
+!/llm_config.example.json
+/config.local.json
+/*.local.json
+/private_markers.*
+/secrets*.json
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+
+# ---------------------------------------------------------------------------
+# 运行数据、聊天记录、统计数据库和日志
+# 其中可能包含 wxid、群 ID、成员昵称、聊天正文或本地路径。
+# ---------------------------------------------------------------------------
+.runtime/
+logs/
+*.sqlite
+*.sqlite3
+*.sqlite-*
+*.db
+*.db-*
+*.log
+*.log.*
+*.dmp
+*.bak
+*.tmp
+*.temp
+*.csv
+
+# ---------------------------------------------------------------------------
+# Python 缓存与虚拟环境
+# ---------------------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+env/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+.coverage.*
+htmlcov/
+
+# ---------------------------------------------------------------------------
+# 构建产物；源码仓库只保留两个运行时桥接 DLL
+# ---------------------------------------------------------------------------
+/build/
+/dist/
+/_internal/
+/release/
+*.exe
+*.dll
+!native/build/selftest_bridge.dll
+!native/build_text/text_bridge.dll
+native/.build/
+*.obj
+*.lib
+*.exp
+*.pdb
+*.ilk
+*.manifest
+*.spec
+*.zip
+*.7z
+*.rar
+
+# ---------------------------------------------------------------------------
+# 编辑器、系统与本地预览文件
+# ---------------------------------------------------------------------------
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+desktop.ini
+_preview.html

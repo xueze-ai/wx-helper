@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 私密报告安全漏洞
+    url: https://github.com/xueze-ai/wx-helper/security/advisories/new
+    about: 不要在公开 Issue 中披露 API Key、账号信息或可利用细节
+  - name: 阅读使用文档
+    url: https://github.com/xueze-ai/wx-helper#readme
+    about: 安装、群配置、大模型、统计和常见问题
